@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+
+    <style>
+        * 
+        {
+            padding: 0%;
+            margin: 0;  
+            box-sizing: border-box;          
+        }
+        body{
+            background: url(/Nature_\(177139207\).jpeg);
+        }
+        .navigaiton_bar
+        {
+            background: #fff;
+            text-align: center;
+        }
+        
+        .navigaiton_bar ul
+        {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        
+        }
+        .navigaiton_bar ul li 
+        {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+
+        }
+
+        .navigaiton_bar ul li a
+        {
+           text-decoration: none;
+           color: black; 
+           font-size: 17px;
+           font-weight: 600;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navigaiton_bar ul li:hover
+        {
+            background: #fff;
+            border-radius: 3px;
+        }
+        .sub-menu-1 {
+            display: none;
+        }
+
+        .navigaiton_bar ul li:hover .sub-menu-1
+        {
+            display: block;
+            position: absolute;
+            background: rgb(170, 169, 169);
+            margin-top: 15px;
+            margin-left: -15px;
+            border-radius: 6px;
+            box-shadow: black;
+        }
+
+        .navigaiton_bar ul li:hover .sub-menu-1 ul
+        {
+            display: block;
+            margin: 10px;
+            
+
+        }
+
+        .navigaiton_bar ul li:hover .sub-menu-1 ul li
+        {
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px solid rgb(255, 240, 240);
+            background: transparent;
+            border-radius: 1px;
+            text-align: left;
+            
+        }
+
+        .navigaiton_bar ul li:hover .sub-menu-1 ul li:last-child
+        {
+            border-bottom: none;
+        }
+        .navigaiton_bar ul li:hover .sub-menu-1 ul li a:hover
+        {
+            color: rgb(235, 235, 235);
+        }
+        .sub-menu-2
+        {
+            display:none;
+        }
+        .next_hover:hover .sub-menu-2
+        {
+            position: absolute;
+            display: block;
+            margin-top: -40px;
+            margin-left: 140px;
+            background: rgb(170, 169, 169);
+            border-radius: 6px;
+          
+        }
+        .sub-menu-3
+        {
+            display: none;
+        }
+
+        .next-hover-2:hover .sub-menu-3
+        {
+            position: absolute;
+            display: block;
+            margin-top: -40px;
+            margin-left: 140px;
+            background: rgb(170, 169, 169);
+            border-radius: 6px;
+        }
+
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+
+
+    <div class="navigaiton_bar">
+    <ul>
+        
+        <li><a href="#">Payment for consumer</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li class="next_hover"><a href="#"> Payments</a> 
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="#">Bill Payments</a></li>
+                                <li><a href="#">Send money to anyone</a></li>
+                                <li><a href="#">Online Payment</a></li>
+                                <li><a href="#">Instore Payments</a></li>
+                            </ul>
+                       </div>
+                    </li>
+
+
+                    <li class="next_hover"><a href="#"> Commerce</a> 
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li class="next-hover-2"><a href="#">Shop</a>
+                                    <div class="sub-menu-3">
+                                        <ul>
+                                            <li><a href="#">Clothing</a></li>
+                                            <li><a href="#">Electronics</a></li>
+                                            <li><a href="#">Mobiles & Tablets</a></li>
+                                            <li><a href="#">Home & Kitchen</a></li>
+                                            <li><a href="#">Health & Grocery</a></li>
+                                            <li><a href="#">Foot Wear</a></li>
+                                            <li><a href="#">Used Gadgets</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Movie Tickets</a></li>
+                                <li><a href="#">Flight Tickets</a></li>
+                                <li><a href="#">Train Tickets</a></li>
+                            </ul>
+                       </div>
+                    </li>
+                    <li><a href="#"> Financial services</a> </li>
+
+
+
+                </ul>
+            </div>
+        
+        
+        </li>
+        <li><a href="#">Payment for Bussiness</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#"> Payments</a> </li>
+                    <li><a href="#"> Commerce</a> </li>
+                    <li><a href="#"> Financial services</a> </li>
+
+
+
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">company</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#"> About us</a> </li>
+                    <li><a href="#"> Blog</a> </li>
+                    <li><a href="#"> Contact us</a> </li>
+
+
+
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>

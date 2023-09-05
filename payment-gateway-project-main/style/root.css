@@ -1,0 +1,163 @@
+.main-background {
+  background: #f5f7fa;  
+  font-family: Roboto Condensed;
+  font-size: 20px;
+}
+
+.radio{
+  margin-left: 16px;
+}
+
+.radio-label{
+  margin-left: 8px;
+  text-align: left;
+}
+
+
+.form-heading{
+  width: 100%;
+  margin-left: 16px;
+  text-shadow: white;
+  font-weight: bolder;
+  font-size: 25px;  
+}
+
+input[type="number"],input[type="text"],input[type="button"],input[type="date"],select{
+  width: 350px;
+  border-radius: 5px;
+  padding: 12px;
+  margin: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 17px;
+  border:1px solid black;
+}
+
+input[type="button"] {
+  width: 378px;
+  background-color: #6daffe;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type="button"]:hover {
+  background-color: #5680e9;
+}
+
+select {
+  width: 375px;
+  color: #999;
+}
+
+option{
+ color:black;
+}
+
+
+.home-toolbar-container {
+  background: #002970;
+  width: 100%;
+  height: 200px;
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+.toolbar-menu-container {
+  width: 90%;
+  height: 80px;
+  margin: 40px auto;
+  display: flex;
+  padding-left: 0px;
+}
+
+.toolbar-menu-item {
+  height: 100%;
+  width: 80px;
+  display: inline-flex;
+  margin-right: 32px;
+  margin-left: 0px;
+  padding: 0px;
+}
+.smartIcon {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.iconImg {
+  height: 40px;
+  width: 40px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.img {
+  border-style: none;
+  vertical-align: middle;
+}
+
+.itemName {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.itemSelect,._2KjdItemSelect {
+  margin-top: 7px;
+  height: 3px;
+  background-color: #00b9f5;
+  display: none;
+}
+
+.home-toolbar-selected-section {
+  position: absolute;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 150px;
+}
+
+.box {
+  padding: 16px;
+  background: #fff;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 5%);
+}
+
+.bill-container{
+  margin:auto;
+  text-align: left;
+  justify-content: center;  
+}
+
+._2Kjd {
+  margin: 16px;
+  margin-bottom: 60px;
+}
+._323T{
+  margin-right: 12%;
+  width: 96px;
+}
+
+._323T-img{
+  margin-right: 12px;
+  
+}
+ .travels-form > input ,.travels-form > img{
+   margin-right: 16px;
+ }
+ .travels-form > img{
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  border-color: black;
+  border-width: 1px;
+}

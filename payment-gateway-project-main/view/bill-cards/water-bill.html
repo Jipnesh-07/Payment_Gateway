@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="bill-container box">
+     <form action="" method="get">
+
+        <h4 class="form-heading">Water Bill Payment </h4>
+        
+        <input class="radio" type="radio" id="water-bill" value="Water Bill" name="bill-type" checked>
+        <label class="radio-label" for="water-bill">Water Bill</label>
+        <input class="radio" type="radio" id="sewerage-bill" value="Sewerage Bill" name="bill-type">
+        <label class="radio-label" for="sewerage-bill">Sewerage Bill</label>
+        <br><br>
+       
+        <select name="Select_Board" id="Select_Board" style="color:#999;">
+            <option value="" disabled selected>Select_Board</option>
+            <option value="Bangalore Water Supply and Sewerage Board"> Bangalore Water Supply and Sewerage Board</option>
+            <option value="Cidco Bill Payment -Water">Cidco Bill Payment -Water</option>
+            <option value="City Municipal Council -Ilkal">City Municipal Council -Ilkal</option>
+            <option value="Delhi Jal Board (DJB)">Delhi Jal Board (DJB)</option>
+            <option value="Jammu Kashmir Water Billing-JKPHE Kashmir">Jammu Kashmir Water Billing-JKPHE Kashmir</option>
+            <option value="Punjab Municipal Corporation/Council">Punjab Municipal Corporation/Council"</option>
+            <option value="Rajasthan PHED - Water">Rajasthan PHED - Water</option>
+            <option value="Uttarakhand Jal Sansthan">Uttarakhand Jal Sansthan</option>
+            <option value="Vijayapura Water Board">Vijayapura Water Board</option>
+        </select>
+        
+        <p>  <input type="number" name="number" placeholder="Contact No."></p>
+        <p>  <input id="rzp-order-id" type="text" name="number" placeholder="Enter Id"></p>
+        <input id="rzp-button1" type="button" value="Proceed to Pay"><br><br>
+         <script src="./../js/order.js"></script>
+
+          
+        
+        
+     </form>
+    </div>
+</body>
+</html>

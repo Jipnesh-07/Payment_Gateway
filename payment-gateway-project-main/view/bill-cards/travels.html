@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="bill-container box">
+        <!-- Sub Menu -->
+        <div class="_2Kjd" style="display: flex;">
+            <div class="_323T" id="_323T-1"><img class="_323T-img"
+                    src="//drg5ie3bz46tr.cloudfront.net/travel/rtravel/assets/b2411b61.svg" alt="Flight icon">Flights
+                <div class="_2KjdItemSelect"> </div>
+            </div>
+            <div class="_323T" id="_323T-2"><img class="_323T-img"
+                    src="//drg5ie3bz46tr.cloudfront.net/travel/rtravel/assets/21b54170.svg" alt="Flight icon">Bus
+                <div class="_2KjdItemSelect"> </div>
+            </div>
+            <div class="_323T" id="_323T-3"><img class="_323T-img"
+                    src="//drg5ie3bz46tr.cloudfront.net/travel/rtravel/assets/05113c67.svg" alt="Flight icon">Trains
+                <div class="_2KjdItemSelect"> </div>
+            </div>
+
+        </div>
+        <!-- Menu content -->
+        <div>
+            <form style="display: flex;" class="travels-form">
+                <input id="from" style="width: 200px;" type="text" autocomplete="off"  placeholder="From"tabindex="1">
+                <img id="switch-data" alt="Round Trip Arrow" src="//drg5ie3bz46tr.cloudfront.net/travel/rtravel/assets/cce6cd0a.svg"
+                    role="presentation">
+                <input type="text" style="width: 200px;" autocomplete="off" id="to" placeholder="To" tabindex="1">
+                <input type="date" style="width: 200px;" tabindex="1" placeholder="Departure Date">&nbsp;
+                <input id="rzp-order-id" type="text" style="width: 200px;"name="number" placeholder="Enter Id">
+                <input  id="rzp-button1" style="width: 200px;" type="button" value="Book Ticket">
+                <script src="./../js/order.js"></script>
+            </form>
+        </div>
+        
+        <script>
+            var travelItems = document.getElementsByClassName("_2KjdItemSelect");
+            var travelItemValue = [["",""],["",""],["",""]]
+
+            var travelItemSelectedIndex = 0;
+            travelItems[travelItemSelectedIndex].style.display = "block";
+            for (let i = 0; i < travelItems.length; i++) {
+                document.getElementById("_323T-" + (i + 1)).onclick = function (e) {
+                    travelItems[travelItemSelectedIndex].style.display = "none";
+                    var from=document.getElementById("from");
+                    var to= document.getElementById("to");
+                    travelItemValue[travelItemSelectedIndex] = [from.value,to.value]
+                    travelItemSelectedIndex = i;
+                    travelItems[travelItemSelectedIndex].style.display = "block";
+                    from.value = travelItemValue[travelItemSelectedIndex][0]            
+                    to.value = travelItemValue[travelItemSelectedIndex][1]
+
+                }
+            }
+            document.getElementById("switch-data").onclick=function(e){
+                var from=document.getElementById("from");
+                var to= document.getElementById("to");
+                var value= from.value;
+                from.value=to.value;
+                to.value=value;
+            }
+            
+        </script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+
+<style>
+        * 
+        {
+            padding: 0%;
+            margin: 0;  
+            box-sizing: border-box;          
+        }
+        body{
+            background: url(/Nature_\(177139207\).jpeg);
+        }
+        .navigaiton_bar
+        {
+            background: #fff;
+            text-align: center;
+        }
+        
+        .navigaiton_bar ul
+        {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        
+        }
+        .navigaiton_bar ul li 
+        {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+
+        }
+
+        .navigaiton_bar ul li a
+        {
+           text-decoration: none;
+           color: black; 
+           font-size: 17px;
+           font-weight: 600;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navigaiton_bar ul li:hover
+        {
+            background: #fff;
+            border-radius: 3px;
+        }
+        .sub-menu-1 {
+            display: none;
+        }
+
+        .navigaiton_bar ul li:hover .sub-menu-1
+        {
+            display: block;
+            position: absolute;
+            background: rgb(170, 169, 169);
+            margin-top: 15px;
+            margin-left: -15px;
+            border-radius: 6px;
+            box-shadow: black;
+        }
+
+        .navigaiton_bar ul li:hover .sub-menu-1 ul
+        {
+            display: block;
+            margin: 10px;
+            
+
+        }
+
+        .navigaiton_bar ul li:hover .sub-menu-1 ul li
+        {
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px solid rgb(255, 240, 240);
+            background: transparent;
+            border-radius: 1px;
+            text-align: left;
+            
+        }
+
+        .navigaiton_bar ul li:hover .sub-menu-1 ul li:last-child
+        {
+            border-bottom: none;
+        }
+        .navigaiton_bar ul li:hover .sub-menu-1 ul li a:hover
+        {
+            color: rgb(235, 235, 235);
+        }
+        .sub-menu-2
+        {
+            display:none;
+        }
+        .next_hover:hover .sub-menu-2
+        {
+            position: absolute;
+            display: block;
+            margin-top: -40px;
+            margin-left: 140px;
+            background: rgb(170, 169, 169);
+            border-radius: 6px;
+          
+        }
+        .sub-menu-3
+        {
+            display: none;
+        }
+
+        .next-hover-2:hover .sub-menu-3
+        {
+            position: absolute;
+            display: block;
+            margin-top: -40px;
+            margin-left: 140px;
+            background: rgb(170, 169, 169);
+            border-radius: 6px;
+        }
+
+        
+
+
+
+
+
+    </style>
